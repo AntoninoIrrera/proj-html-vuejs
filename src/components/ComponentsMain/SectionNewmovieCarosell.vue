@@ -33,7 +33,7 @@ div.col-10{
 
 .prova{
     background-color: red;
-    width: 250px;
+    width: 30%;
     height: 350px;
 }
 
