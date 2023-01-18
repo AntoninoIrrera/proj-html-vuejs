@@ -25,4 +25,8 @@ export default{
 @use './styles/general.scss' as *;
 @use './styles/partials/variables' as *;
 @use '../node_modules/bootstrap/scss/bootstrap.scss' as *;
+
+body{
+  background-color: $color_main;
+}
 </style>

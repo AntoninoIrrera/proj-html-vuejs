@@ -22,9 +22,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @use '../styles/partials/variables' as *;
 
-    header{
-        background-color: $color_main;
-    }
+
 </style>
