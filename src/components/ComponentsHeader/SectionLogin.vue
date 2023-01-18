@@ -7,7 +7,7 @@
 <template>
     <section>
         <div class="container p-3">
-            <div class="row align-content-center">
+            <div class="row">
                 <div class="col-6">
                     <p class="text-white m-0">prova</p>
                 </div>
@@ -21,8 +21,10 @@
 
 <style lang="scss" scoped>
 
+@use '../../styles/partials/variables' as *;
+
 section{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $color_grey;
 }
 
 </style>
