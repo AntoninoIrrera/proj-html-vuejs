@@ -1,24 +1,23 @@
 <script >
 
 
-
 </script>
 
 <template>
-    <section class="mb-5">
+    <section>
         <div class="container py-5 px-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <p class="text-white m-0">prova</p>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <p class="text-white m-0">prova</p>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <p class="text-white m-0">prova</p>
                 </div>
-                <div class="col-12">
-                    <p class="text-white text-center m-0">prova</p>
+                <div class="col-3">
+                    <p class="text-white m-0">prova</p>
                 </div>
             </div>
         </div>
@@ -28,7 +27,8 @@
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-div.container{
-    background-color: $color_green;
+section{
+    background-color: $color_grey;
 }
+
 </style>
