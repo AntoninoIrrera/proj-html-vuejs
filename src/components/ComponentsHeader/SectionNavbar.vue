@@ -6,7 +6,7 @@
 
 <template>
     <section>
-        <div class="container p-3">
+        <div class="container p-4">
             <div class="row">
                 <div class="col-6">
                     <p class="text-white m-0">prova</p>
