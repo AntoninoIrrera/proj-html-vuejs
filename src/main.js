@@ -31,6 +31,11 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+
+import { faShare } from '@fortawesome/free-solid-svg-icons'
+
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -38,7 +43,12 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
 
-library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, faGooglePlusG, faLock, faBasketShopping, faSortDown, faAngleUp, faCaretLeft, faCaretRight, faStar)
+
+
+
+library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, 
+faGooglePlusG, faLock, faBasketShopping, faSortDown, faAngleUp, faCaretLeft, 
+faCaretRight, faStar, faClock, faShare, faYoutube,)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
