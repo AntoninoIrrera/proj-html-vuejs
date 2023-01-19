@@ -19,12 +19,18 @@ import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 
+import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
+
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 
 
 
 
-library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, faGooglePlusG, faLock)
+
+
+
+library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, faGooglePlusG, faLock, faBasketShopping, faSortDown)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
