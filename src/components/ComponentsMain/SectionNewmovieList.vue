@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-4 mt-5">
                     <img src="../../assets/img/5-1.jpg" alt="5-1">
-                     <p class="text-white m-0">
+                    <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
                         0/10
                     </p>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="col-4 mt-5">
                     <img src="../../assets/img/3.jpg" alt="3">
-                     <p class="text-white m-0">
+                    <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
                         0/10
                     </p>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-4 mt-5">
                     <img src="../../assets/img/4.jpg" alt="4">
-                     <p class="text-white m-0">
+                    <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
                         0/10
                     </p>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-4 mt-5">
                     <img src="../../assets/img/3 (1).jpg" alt="3">
-                     <p class="text-white m-0">
+                    <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
                         1/10
                     </p>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="col-4 mt-5">
                     <img src="../../assets/img/2.jpg" alt="2">
-                     <p class="text-white m-0">
+                    <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
                         0/10
                     </p>
