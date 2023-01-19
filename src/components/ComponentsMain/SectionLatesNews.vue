@@ -1,5 +1,13 @@
 <script >
 
+export default{
+    data(){
+        return{
+            contatoreDisplayDate: 0,
+
+        }
+    }
+}
 
 
 </script>
@@ -24,32 +32,36 @@
                 </div>
                 <div class="col-6 mt-5">
                     <div class="row">
-                        <div class="col-6 mt-0 g-4">
+                        <div class="col-6 mt-0 g-4" @mouseover="this.contatoreDisplayDate = 1" @mouseleave="this.contatoreDisplayDate = 0">
                             <img class="w-100 h-100" src="../../assets/img/blog2-570x570.jpg" alt="blog">
+                            <p :class="this.contatoreDisplayDate == 1 ? `` : `d-none`"  class="m-0 text-white">April 14, 2020</p>
                             <h2 class="text-white m-0 fs-5 scritta">
                                 Consequat Nam Lectus Nibh Aucibus It Has Turpis  
                             </h2>
                             <a href="#" class="bottone-left">Details</a>
                             <a href="#" class="bottone-right">Share</a>
                         </div>
-                        <div class="col-6 mt-0 g-4">
+                        <div class="col-6 mt-0 g-4"  @mouseover="this.contatoreDisplayDate = 1" @mouseleave="this.contatoreDisplayDate = 0">
                             <img class="w-100 h-100" src="../../assets/img/blog3-570x570.jpg" alt="blog">
+                            <p :class="this.contatoreDisplayDate == 1 ? `` : `d-none`"  class="m-0 text-white">April 14, 2020</p>
                             <h2 class="text-white m-0 fs-5 scritta">
                                 Nam Lectus Nibh Consequat Aucibus Turpis It Has
                             </h2>
                             <a href="#" class="bottone-left">Details</a>
                             <a href="#" class="bottone-right">Share</a>
                         </div>
-                        <div class="col-6 mt-5 g-4">
+                        <div class="col-6 mt-5 g-4"  @mouseover="this.contatoreDisplayDate = 1" @mouseleave="this.contatoreDisplayDate = 0">
                             <img class="w-100 h-100" src="../../assets/img/blog4-570x570.jpg" alt="blog">
+                            <p :class="this.contatoreDisplayDate == 1 ? `` : `d-none`"  class="m-0 text-white">April 14, 2020</p>
                             <h2 class="text-white m-0 fs-5 scritta">
                                 Bring Me The Head Of Alfredo Garcia Best Movie In
                             </h2>
                             <a href="#" class="bottone-left">Details</a>
                             <a href="#" class="bottone-right">Share</a>
                         </div>
-                        <div class="col-6 mt-5 g-4">
+                        <div class="col-6 mt-5 g-4"  @mouseover="this.contatoreDisplayDate = 1" @mouseleave="this.contatoreDisplayDate = 0">
                             <img class="w-100 h-100" src="../../assets/img/blog5-570x570.jpg" alt="blog">
+                            <p :class="this.contatoreDisplayDate == 1 ? `` : `d-none`"  class="m-0 text-white">April 14, 2020</p>
                             <h2 class="text-white m-0 fs-5 scritta">
                                 Pump Action Interaction English Action Movie (2020
                             </h2>
@@ -77,14 +89,24 @@ img{
 
 div.col-6 {
     position: relative;
-
     
 
     h2 {
         font-size: 1.5rem;
     }
 
-   
+    p{
+        position: absolute;
+        top: 15px;
+        right: 12px;
+
+        font-size: 0.8rem;
+
+        background-color: $color_green;
+        padding: 0.5rem 1rem;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
 
     h2.scritta {
         position: absolute;
