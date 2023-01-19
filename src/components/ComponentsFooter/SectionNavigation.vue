@@ -13,11 +13,11 @@
                             <li class="mb-5">About Us</li>
                             <li>Mauris malesuada arcu eu posuere eleifen. Ut egestas tortor at leo egestas tincidunt. Nan tincidunt metus tristique tristique viverra. Mauris erat ante, egestas vitae dapibus seds.</li>
                             <li>
-                                <font-awesome-icon class="text-white cerchio_facebook me-3" icon="fa-brands fa-facebook-f" />
-                                <font-awesome-icon class="text-white cerchio_twitter me-3" icon="fa-brands fa-twitter" />
-                                <font-awesome-icon class="text-white cerchio_linkedim me-3" icon="fa-brands fa-linkedin-in" />
-                                <font-awesome-icon class="text-white cerchio_instagram me-3" icon="fa-brands fa-instagram" />
-                                <font-awesome-icon class="text-white cerchio_pinterest me-3" icon="fa-brands fa-pinterest" />
+                                <font-awesome-icon class="cerchio_facebook me-3" icon="fa-brands fa-facebook-f" />
+                                <font-awesome-icon class="cerchio_twitter me-3" icon="fa-brands fa-twitter" />
+                                <font-awesome-icon class="cerchio_linkedim me-3" icon="fa-brands fa-linkedin-in" />
+                                <font-awesome-icon class="cerchio_instagram me-3" icon="fa-brands fa-instagram" />
+                                <font-awesome-icon class="cerchio_pinterest me-3" icon="fa-brands fa-pinterest" />
                             </li>
                         </ul>
                     </p>
@@ -96,29 +96,55 @@ li{
     background-color: hsl(195deg 98% 46%);
     padding: 0.75rem 1rem;
     border-radius: 50%;
+
+    &:hover{
+        background-color: transparent;
+        color: $color_green;
+    }
 }
 
 .cerchio_twitter {
     background-color: hsl(195deg 98% 46%);
     padding: 0.75rem 0.75rem;
     border-radius: 50%;
+
+    &:hover {
+        background-color: transparent;
+        color: $color_green;
+    }
 }
 
 .cerchio_linkedim {
     background-color: hsl(177deg 100% 31%);
     padding: 0.75rem 0.75rem;
     border-radius: 50%;
+
+    &:hover {
+        background-color: transparent;
+        color: $color_green;
+    }
 }
 
 .cerchio_instagram {
     background-color: hsl(2deg 64% 46%);
     padding: 0.75rem 0.75rem;
     border-radius: 50%;
+
+    &:hover {
+        background-color: transparent;
+        color: $color_green;
+    }
 }
 
 .cerchio_pinterest {
     background-color: hsl(354deg 89% 36%);
     padding: 0.75rem 0.75rem;
     border-radius: 50%;
+
+
+    &:hover {
+        background-color: transparent;
+        color: $color_green;
+    }
 }
 </style>
