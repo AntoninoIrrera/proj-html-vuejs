@@ -20,7 +20,7 @@
                         <font-awesome-icon class="cambioSlider" icon="fa-solid fa-caret-right" />
                     </p>
                 </div>
-                <div class="col-4 mt-5 p-0">
+                <div class="col-4 p-0">
                     <img src="../../assets/img/1.jpg" alt="1">
                     <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
@@ -35,7 +35,7 @@
                     <a href="#" class="bottone-left">Details</a>
                     <a href="#" class="bottone-right">381 Views</a>
                 </div>
-                <div class="col-4 mt-4 p-0">
+                <div class="col-4 mt-4 p-0 div_centrale">
                     <img src="../../assets/img/2.jpg" alt="2">
                     <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
@@ -50,7 +50,7 @@
                     <a href="#" class="bottone-left">Details</a>
                     <a href="#" class="bottone-right">947 Views</a>
                 </div>
-                <div class="col-4 mt-5 p-0">
+                <div class="col-4 p-0">
                     <img src="../../assets/img/5.jpg" alt="5">
                     <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
@@ -90,16 +90,20 @@ div.col-10{
 
 img{
     width: 100%;
+    height: 100%;
     filter: brightness(0.5);
     border-radius: 25px;
 }
 
-
+div.col-4.div_centrale{
+    height: 650px;
+    z-index: 1;
+}
 
 div.col-4{
     position: relative;
-    filter: brightness(0.5);
-
+    height: 550px;
+    margin-top: 60px;
 
     p{
         position: absolute;
@@ -121,8 +125,8 @@ div.col-4{
     a.bottone-left{
         position: absolute;
         color: white;
-        bottom: 55px;
-        left: -15px;
+        bottom: 20px;
+        left: -25px;
 
         text-decoration: none;
         background-color: $color_main;
@@ -135,7 +139,7 @@ div.col-4{
     a.bottone-right {
         position: absolute;
         color: white;
-        bottom: 55px;
+        bottom: 20px;
         right: -25px;
 
         text-decoration: none;
