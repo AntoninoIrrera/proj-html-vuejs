@@ -39,6 +39,8 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 import { faPinterest } from '@fortawesome/free-brands-svg-icons'
 
+import { faCopyright } from '@fortawesome/free-regular-svg-icons'
+
 
 
 
@@ -51,7 +53,7 @@ import { faPinterest } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, 
 faGooglePlusG, faLock, faBasketShopping, faSortDown, faAngleUp, faCaretLeft, 
-faCaretRight, faStar, faClock, faShare, faYoutube, faPinterest)
+faCaretRight, faStar, faClock, faShare, faYoutube, faPinterest, faCopyright)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
