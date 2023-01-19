@@ -3,8 +3,34 @@
 export default{
     data(){
         return{
-            contatoreDisplayDate: 0,
-
+            contatoreDisplayDate: -1,
+            blogList:[
+                {
+                    img: 'blog2-570x570.jpg',
+                    date: 'April 14, 2020',
+                    text: 'Consequat Nam Lectus Nibh Aucibus It Has Turpis',
+                },
+                {
+                    img: 'blog3-570x570.jpg',
+                    date: 'April 14, 2020',
+                    text: 'Nam Lectus Nibh Consequat Aucibus Turpis It Has',
+                },
+                {
+                    img: 'blog4-570x570.jpg',
+                    date: 'April 14, 2020',
+                    text: 'Bring Me The Head Of Alfredo Garcia Best Movie In',
+                },
+                {
+                    img: 'blog5-570x570.jpg',
+                    date: 'April 14, 2020',
+                    text: 'Pump Action Interaction English Action Movie (2020',
+                },
+            ]
+        }
+    },
+    methods:{
+        getImagePath(imgPath){
+            return new URL(`../../assets/img/${imgPath}`, import.meta.url).href;
         }
     }
 }
@@ -32,7 +58,16 @@ export default{
                 </div>
                 <div class="col-6 mt-5">
                     <div class="row">
-                        <div class="col-6 mt-0 g-4" @mouseover="this.contatoreDisplayDate = 1" @mouseleave="this.contatoreDisplayDate = 0">
+                        <div v-for="blog,index in blogList" :class="index > 1 ? `mt-5` : ``" class="col-6 mt-0 g-4" @mouseover="this.contatoreDisplayDate = index" @mouseleave="this.contatoreDisplayDate = -1">
+                            <img class="w-100 h-100" :src=getImagePath(blog.img) alt="blog">
+                            <p :class="this.contatoreDisplayDate == index ? `` : `d-none`" class="m-0 text-white">{{blog.date}}</p>
+                            <h2 class="text-white m-0 fs-5 scritta">
+                                {{blog.text}}
+                            </h2>
+                            <a href="#" class="bottone-left">Details</a>
+                            <a href="#" class="bottone-right">Share</a>
+                        </div>
+                        <!-- <div class="col-6 mt-0 g-4" @mouseover="this.contatoreDisplayDate = 1" @mouseleave="this.contatoreDisplayDate = 0">
                             <img class="w-100 h-100" src="../../assets/img/blog2-570x570.jpg" alt="blog">
                             <p :class="this.contatoreDisplayDate == 1 ? `` : `d-none`"  class="m-0 text-white">April 14, 2020</p>
                             <h2 class="text-white m-0 fs-5 scritta">
@@ -67,7 +102,7 @@ export default{
                             </h2>
                             <a href="#" class="bottone-left">Details</a>
                             <a href="#" class="bottone-right">Share</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
