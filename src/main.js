@@ -25,13 +25,20 @@ import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
+import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
+
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
+
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
 
 
 
 
-library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, faGooglePlusG, faLock, faBasketShopping, faSortDown, faAngleUp)
+
+
+library.add(faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faInstagram, faGooglePlusG, faLock, faBasketShopping, faSortDown, faAngleUp, faCaretLeft, faCaretRight, faStar)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
