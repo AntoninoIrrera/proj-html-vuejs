@@ -1,6 +1,59 @@
 <script >
 
 
+export default{
+    data(){
+        return{
+            movieList:[
+                {
+                    img:'1.jpg',
+                    title: 'Hurry Animate Blue Strack New Movie',
+                    category: 'Top Rating',
+                    views: '381',
+                    star: '0/10'
+                },
+                {
+                    img: '2.jpg',
+                    title: 'Quisque Auctor Movie In Strack',
+                    category: 'Coming Soon',
+                    views: '947',
+                    star: '4/10'
+                },
+                {
+                    img: '5.jpg',
+                    title: 'New Movie Quisque In Strack',
+                    category: 'Latest Movie',
+                    views: '721',
+                    star: '0/10'
+                },
+            ]
+        }
+    },
+    methods:{
+        prova(arr, old_index1, new_index1, old_index2, new_index2){
+            this.array_move(arr, old_index1, new_index1);
+
+            this.array_move(arr, old_index2, new_index2);
+        },
+        array_move(arr, old_index, new_index){
+            if (new_index >= arr.length) { 
+                var k = new_index - arr.length + 1; 
+                while (k--) { 
+                    arr.push(undefined); 
+                } 
+            }
+            arr.splice(new_index, 0, arr.splice(old_index, 1)[0]); 
+            return arr; 
+            // for testing }; // returns [2, 1, 3] console.log(array_move([1, 2, 3], 0, 1)); 
+        },
+        getImagePath(imgPath) {
+            return new URL(`../../assets/img/${imgPath}`, import.meta.url).href;
+        }
+
+    }
+}
+
+
 
 </script>
 
@@ -16,11 +69,26 @@
                 </div>
                 <div class="col-2 mb-5">
                     <p class="m-0 text-white text-end">
-                        <font-awesome-icon class="cambioSlider" icon="fa-solid fa-caret-left"/>
-                        <font-awesome-icon class="cambioSlider" icon="fa-solid fa-caret-right" />
+                        <font-awesome-icon class="cambioSlider" @click="array_move(movieList, 0 , 2, 1, 0)" icon="fa-solid fa-caret-left"/>
+                        <font-awesome-icon class="cambioSlider" @click="array_move(movieList, 2 , 0, 1, 2)" icon="fa-solid fa-caret-right" />
                     </p>
                 </div>
-                <div class="col-4 p-0">
+                <div v-for="movie,index in movieList" class="col-4 p-0" :class="index == 1 ? `div_centrale mt-4` : ``">
+                    <img :src=getImagePath(movie.img) alt="1">
+                    <p class="text-white m-0">
+                        <font-awesome-icon class="stella" icon="fa-solid fa-star" />
+                        {{movie.star}}
+                    </p>
+                    <h2 class="text-white m-0 scritta-up">
+                        {{movie.title}}
+                    </h2>
+                    <h2 class="text-white m-0 scritta-down">
+                        Category: {{movie.category}}
+                    </h2>
+                    <a href="#" class="bottone-left">Details</a>
+                    <a href="#" class="bottone-right">{{movie.views}} Views</a>
+                </div>
+                <!-- <div class="col-4 p-0">
                     <img src="../../assets/img/1.jpg" alt="1">
                     <p class="text-white m-0">
                         <font-awesome-icon class="stella" icon="fa-solid fa-star" />
@@ -64,7 +132,7 @@
                     </h2>
                     <a href="#" class="bottone-left">Details</a>
                     <a href="#" class="bottone-right">721 Views</a>
-                </div>
+                </div> -->
             </div>
         </div>        
     </section>
@@ -86,6 +154,8 @@ div.col-10{
     border-radius: 50%;
     padding: 0.5rem 0.75rem;
     margin-left: 0.5rem;
+
+    cursor: pointer;
 }
 
 img{
