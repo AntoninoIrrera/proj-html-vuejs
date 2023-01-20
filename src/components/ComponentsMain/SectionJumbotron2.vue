@@ -21,12 +21,22 @@
 @use '../../styles/partials/variables' as *;
 
     section {
-        background-image: url(../../assets/img/coming-bg.jpg);
+        background: rgba(0,0,0, 0.5) url(../../assets/img/coming-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
         height: 75vh;
         position: relative;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: inherit;
+            content: ' ';
+        }
     }
 
     span{
