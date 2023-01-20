@@ -10,7 +10,8 @@
                 <div class="col-3">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
-                            <li class="mb-5">About Us</li>
+                            <li class="fw-bold fs-5">About Us</li>
+                            <li class="riga m-0 mb-5"></li>
                             <li>Mauris malesuada arcu eu posuere eleifen. Ut egestas tortor at leo egestas tincidunt. Nan tincidunt metus tristique tristique viverra. Mauris erat ante, egestas vitae dapibus seds.</li>
                             <li>
                                 <font-awesome-icon class="cerchio_facebook me-3" icon="fa-brands fa-facebook-f" />
@@ -25,7 +26,8 @@
                 <div class="col-3">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
-                            <li class="mb-5">Movie Category</li>
+                            <li class="fw-bold fs-5">Movie Category</li>
+                            <li class="riga m-0 mb-5"></li>
                             <li>English New Movie</li>
                             <li>Hindi All Movie</li>
                             <li>Latest Tamil Movie</li>
@@ -38,7 +40,8 @@
                 <div class="col-3">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
-                            <li class="mb-5">Information</li>
+                            <li class="fw-bold fs-5">Information</li>
+                            <li class="riga m-0 mb-5"></li>
                             <li>Youtube Video Post</li>
                             <li>Action Information</li>
                             <li>New Promotion</li>
@@ -51,7 +54,8 @@
                 <div class="col-3">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
-                            <li class="mb-5">Recent Posts</li>
+                            <li class="fw-bold fs-5">Recent Posts</li>
+                            <li class="riga m-0 mb-5"></li>
                             <li class="d-flex">
                                 <img src="../../assets/img/blog-100x100.jpg" alt="blog1">
                                 <div class="ms-3">
@@ -90,6 +94,11 @@ section{
 
 li{
     margin-top: 1.5rem;
+}
+
+li.riga{
+    width: 40px;
+    border-bottom: 2px solid white;
 }
 
 .cerchio_facebook{
