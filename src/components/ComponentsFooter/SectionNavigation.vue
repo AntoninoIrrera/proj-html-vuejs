@@ -89,8 +89,26 @@
 @use '../../styles/partials/variables' as *;
 
 section{
-    background-color: $color_grey;
+    background: rgba($color_grey, 0.9) url(../../assets/img/ft-bg.jpg);
+    background-position: left;
+    position: relative;
+
+    
+    &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: inherit;
+        content: ' ';
+    }
+    div{
+        z-index: 5;
+    }
+        
 }
+
 
 li{
     margin-top: 1.5rem;
