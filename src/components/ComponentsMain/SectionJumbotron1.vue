@@ -1,18 +1,25 @@
 <script >
 
+export default{
+    data(){
+        return{
+            indexJumbo: 0,
+        }
+    },
+}
 
 
 </script>
 
 <template>
-    <section>
+    <section :class="indexJumbo == 1 ? `secondoJumbo` : `primoJumbo`">
         <p class="m-0 text-white text-center testo_centrale">
             <p>Welcome To Our Movie Site</p>
             <h1>OUR SPECIAL <span>MOVIES</span></h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown</p>
             <a href="#" class="bottone">Read More</a>
         </p>
-        <p class="m-0 bottone_laterale">
+        <p class="m-0 bottone_laterale" @click="indexJumbo == 1 ? indexJumbo = 0 : indexJumbo++">
             <font-awesome-icon icon="fa-solid fa-angle-up"/>
         </p>
     </section>
@@ -21,8 +28,15 @@
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-section{
+.primoJumbo{
     background-image: url(../../assets/img/slider.jpg);
+}
+
+.secondoJumbo{
+    background-image: url(../../assets/img/slider-2.jpg);
+}
+
+section{
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
@@ -68,5 +82,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 </style>
