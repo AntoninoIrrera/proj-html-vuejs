@@ -40,7 +40,7 @@ export default{
 
 <template>
     <section>
-        <div class="container py-5 px-3">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-12 righe_testi">
                     <p class="text-white m-0">

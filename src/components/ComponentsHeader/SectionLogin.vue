@@ -6,9 +6,9 @@
 
 <template>
     <section>
-        <div class="container p-3">
+        <div class="container py-3">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white m-0 d-inline-block">
                         <font-awesome-icon class="vertical_allign" icon="fa-regular fa-envelope"/>
                         Superhit Top Movie
@@ -22,7 +22,7 @@
                     </p>
                     <font-awesome-icon class="google ms-3" icon="fa-brands fa-google-plus-g" />
                 </div>
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white text-end m-0">
                         <font-awesome-icon icon="fa-solid fa-lock" />
                         Login

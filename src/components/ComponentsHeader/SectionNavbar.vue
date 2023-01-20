@@ -77,9 +77,9 @@
 
 <template>
     <section>
-        <div class="container p-4">
+        <div class="container py-4">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white m-0">
                         <ul class="d-flex justify-content-between list-unstyled">
                             <li v-for="element,index in navList" @click="this.contatoreDisplayNavbar = index" class="position-relative">
@@ -134,7 +134,7 @@
                         </ul>
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white text-end m-0">
                         <font-awesome-icon icon="fa-solid fa-basket-shopping"/>
                         <span class="element_carello">0</span>

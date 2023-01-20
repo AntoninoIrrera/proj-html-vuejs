@@ -5,9 +5,9 @@
 
 <template>
     <section>
-        <div class="container py-5 px-3">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 p-0 pe-3">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
                             <li class="fw-bold fs-5">About Us</li>
@@ -23,7 +23,7 @@
                         </ul>
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-3 p-0">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
                             <li class="fw-bold fs-5">Movie Category</li>
@@ -37,7 +37,7 @@
                         </ul>
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-3 p-0">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
                             <li class="fw-bold fs-5">Information</li>
@@ -51,7 +51,7 @@
                         </ul>
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-3 p-0">
                     <p class="text-white m-0">
                         <ul class="text-white list-unstyled">
                             <li class="fw-bold fs-5">Recent Posts</li>

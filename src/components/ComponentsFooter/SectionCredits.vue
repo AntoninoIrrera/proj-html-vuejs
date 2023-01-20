@@ -5,14 +5,14 @@
 
 <template>
     <section>
-        <div class="container p-3">
+        <div class="container py-3">
             <div class="row">
-                <div class="col-6">
-                    <p class="text-white m-0 ms-3 d-inline-block">Tram and Conditions</p>
-                    <p class="text-white m-0 ms-3 d-inline-block">Policy</p>
-                    <p class="text-white m-0 ms-3 d-inline-block">About</p>
+                <div class="col-6 p-0">
+                    <p class="text-white m-0 me-3 d-inline-block">Tram and Conditions</p>
+                    <p class="text-white m-0 me-3 d-inline-block">Policy</p>
+                    <p class="text-white m-0 me-3 d-inline-block">About</p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white m-0 text-end">
                         <font-awesome-icon icon="fa-regular fa-copyright"/>
                         2020

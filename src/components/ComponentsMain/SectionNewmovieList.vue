@@ -82,7 +82,7 @@ export default{
 
 <template>
     <section>
-        <div class="container py-5 px-3">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-11 righe_testi">
                     <p class="text-white m-0 mb-3">
@@ -101,33 +101,34 @@ export default{
                         </ul>
                     </p>
                 </div>
-                <div class="row p-0">
-                    <div v-for="movie,index in movieList" class="col-4 mt-5" @mouseover="this.contatoreDisplayMovieList = index" @mouseleave="this.contatoreDisplayMovieList = -1">
-                        <img :src=getImagePath(movie.img) alt="2">
-                        <p class="text-white m-0 scritta-left" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
-                            {{movie.durata}}
-                        </p>
-                        <p class="text-white m-0 scritta-right">
-                            <font-awesome-icon class="stella" icon="fa-solid fa-star" />
-                            {{movie.star}}
-                        </p>
-                        <font-awesome-icon :class="this.contatoreDisplayMovieList == index ? `` : `d-none`" class="play" icon="fa-regular fa-circle-play" />
-                        <h2 class="text-white m-0 scritta-up" :class="this.contatoreDisplayMovieList == index ? `scritta-up_piusu` : ``">
-                            {{movie.text}}
-                        </h2>
-                        <h2 class="text-white m-0 scritta-down" :class="this.contatoreDisplayMovieList == index ? `scritta-down_piusu` : ``">
-                            Category: {{movie.category}}
-                        </h2>
-                        <h2 class="text-white m-0 scritta-a-comparsa-up" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
-                            Release: {{movie.relese}}
-                        </h2>
-                        <h2 class="text-white m-0 scritta-a-comparsa-down" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
-                            Genres: {{movie.genres}}
-                        </h2>
-                        <a href="#" class="bottone-left">Details</a>
-                        <a href="#" class="bottone-right">{{movie.views}} Views</a>
-                    </div>
+            </div>
+            <div class="row eccezionePerSistemare">
+                <div v-for="movie,index in movieList" class="col-4 mt-4" @mouseover="this.contatoreDisplayMovieList = index" @mouseleave="this.contatoreDisplayMovieList = -1">
+                    <img :src=getImagePath(movie.img) alt="2">
+                    <p class="text-white m-0 scritta-left" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
+                        {{movie.durata}}
+                    </p>
+                    <p class="text-white m-0 scritta-right">
+                        <font-awesome-icon class="stella" icon="fa-solid fa-star" />
+                        {{movie.star}}
+                    </p>
+                    <font-awesome-icon :class="this.contatoreDisplayMovieList == index ? `` : `d-none`" class="play" icon="fa-regular fa-circle-play" />
+                    <h2 class="text-white m-0 scritta-up" :class="this.contatoreDisplayMovieList == index ? `scritta-up_piusu` : ``">
+                        {{movie.text}}
+                    </h2>
+                    <h2 class="text-white m-0 scritta-down" :class="this.contatoreDisplayMovieList == index ? `scritta-down_piusu` : ``">
+                        Category: {{movie.category}}
+                    </h2>
+                    <h2 class="text-white m-0 scritta-a-comparsa-up" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
+                        Release: {{movie.relese}}
+                    </h2>
+                    <h2 class="text-white m-0 scritta-a-comparsa-down" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
+                        Genres: {{movie.genres}}
+                    </h2>
+                    <a href="#" class="bottone-left">Details</a>
+                    <a href="#" class="bottone-right">{{movie.views}} Views</a>
                 </div>
+            </div>
                 
 
                 <!-- <div class="col-4 mt-5" @mouseover="this.contatoreDisplayMovieList = 1" @mouseleave="this.contatoreDisplayMovieList = 0">
@@ -285,7 +286,7 @@ export default{
                     <a href="#" class="bottone-left">Details</a>
                     <a href="#" class="bottone-right">503 Views</a>
                 </div> -->
-            </div>
+            
         </div>
     </section>
 </template>
@@ -297,6 +298,11 @@ export default{
 //     border-bottom: 1px solid $color_grey;
 //     border-left: 2px solid $color_green;
 // }
+
+.eccezionePerSistemare{
+    margin-right: -25px;
+    margin-left: -25px;
+}
 
 li:nth-child(1){
     color: $color_green;

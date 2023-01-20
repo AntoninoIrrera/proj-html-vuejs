@@ -6,14 +6,14 @@
 
 <template>
     <section>
-        <div class="container py-5 px-3">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white m-0">
                         <img src="../../assets/img/cropped-logo.png" alt="Logo">
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <p class="text-white text-end m-0">
                         <input type="text" placeholder="Search ...">
                         <a href="#" class="bottone">Search</a>
