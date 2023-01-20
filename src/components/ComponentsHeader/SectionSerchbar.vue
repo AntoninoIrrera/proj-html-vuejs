@@ -49,5 +49,10 @@
     .bottone{
         background-color: $color_green;
         padding: 1rem;
+
+        &:hover{
+            background-color: white;
+            color: black;
+        }
     }
 </style>

@@ -53,6 +53,11 @@ input{
     background-color: $color_main;
     padding: 1rem 2.5rem;
     border-radius: 25px;
+
+    &:hover{
+        background-color: white;
+        color: black;
+    }
 }
 
 div.col-4{
