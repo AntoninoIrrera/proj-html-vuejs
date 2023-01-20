@@ -173,6 +173,7 @@ li{
 }
 .navbar_header{
     vertical-align: top;
+    margin-left: 0.10rem;
 }
 
 ul.position-absolute{
