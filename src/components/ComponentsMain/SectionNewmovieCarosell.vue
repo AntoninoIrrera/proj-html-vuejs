@@ -9,8 +9,8 @@
         <div class="container py-5 px-3">
             <div class="row">
                 <div class="col-10 mb-5">
-                    <p class="m-0 text-white">
-                        New Movie
+                    <p class="m-0 mb-3 text-white">
+                        <span class="fw-bold fs-5">New Movie</span>
                         <p class="m-0 text-white">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>
@@ -92,7 +92,6 @@ img{
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    filter: brightness(0.3);
 }
 
 div.col-4.div_centrale{
@@ -114,6 +113,14 @@ div.col-4.div_centrale{
     p{
         filter: brightness(1);
     }
+
+    a.bottone-left{
+        filter: brightness(1);
+    }
+
+    a.bottone-right {
+        filter: brightness(1);
+    }
 }
 
 div.col-4{
@@ -121,6 +128,9 @@ div.col-4{
     height: 550px;
     margin-top: 60px;
 
+    img{
+        filter: brightness(0.3);
+    }
 
     p{
         position: absolute;

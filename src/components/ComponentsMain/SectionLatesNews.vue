@@ -44,8 +44,8 @@ export default{
             <div class="row">
                 <div class="col-12">
                     <p class="text-white m-0">
-                        Latest News
-                        <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin   </p>
+                        <span class="fw-bold fs-5">Latest News</span>
+                        <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>
                 <div class="col-6 p-0 pe-3 mt-5">

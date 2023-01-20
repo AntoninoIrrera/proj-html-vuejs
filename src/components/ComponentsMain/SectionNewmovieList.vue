@@ -85,8 +85,8 @@ export default{
         <div class="container py-5 px-3">
             <div class="row">
                 <div class="col-11">
-                    <p class="text-white m-0">
-                        New Movie
+                    <p class="text-white m-0 mb-3">
+                        <span class="fw-bold fs-5">New Movie</span>
                         <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>

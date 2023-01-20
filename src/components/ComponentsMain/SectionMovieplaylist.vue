@@ -9,8 +9,8 @@
         <div class="container py-5 px-3">
             <div class="row">
                 <div class="col-11">
-                    <p class="m-0 text-white">
-                        Movie Playlist
+                    <p class="m-0 mb-3 text-white">
+                        <span class="fw-bold fs-5">Movie Playlist</span>
                         <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>
