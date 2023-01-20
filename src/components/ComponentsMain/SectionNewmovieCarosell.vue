@@ -61,13 +61,13 @@ export default{
     <section>
         <div class="container py-5 px-3">
             <div class="row">
-                <div class="col-10 mb-5">
+                <div class="col-11 mb-5 righe_testi">
                     <p class="m-0 mb-3 text-white">
                         <span class="fw-bold fs-5">New Movie</span>
                         <p class="m-0 text-white">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>
-                <div class="col-2 mb-5">
+                <div class="col-1 mb-5">
                     <p class="m-0 text-white text-end">
                         <font-awesome-icon class="cambioSlider" @click="array_move(movieList, 0 , 2, 1, 0)" icon="fa-solid fa-caret-left"/>
                         <font-awesome-icon class="cambioSlider" @click="array_move(movieList, 2 , 0, 1, 2)" icon="fa-solid fa-caret-right" />
@@ -140,10 +140,10 @@ export default{
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
-div.col-10{
-    border-bottom: 1px solid $color_grey;
-    border-left: 2px solid $color_green;
-}
+// div.col-10{
+//     border-bottom: 1px solid $color_grey;
+//     border-left: 2px solid $color_green;
+// }
 
 .stella{
     color: $color_green;

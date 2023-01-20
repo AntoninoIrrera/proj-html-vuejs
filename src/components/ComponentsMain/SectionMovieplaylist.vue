@@ -8,7 +8,7 @@
     <section>
         <div class="container py-5 px-3">
             <div class="row">
-                <div class="col-11">
+                <div class="col-12 righe_testi">
                     <p class="m-0 mb-3 text-white">
                         <span class="fw-bold fs-5">Movie Playlist</span>
                         <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-4 mt-5 p-0 ps-3">
                     <div class="layer_laterale">
                         <div class="row linea_sotto">
                             <div class="col-12 text-white py-3 px-4">
@@ -107,10 +107,10 @@
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-div.col-11{
-    border-bottom: 1px solid $color_grey;
-    border-left: 2px solid $color_green;
-}
+// div.col-11{
+//     border-bottom: 1px solid $color_grey;
+//     border-left: 2px solid $color_green;
+// }
 
 .linea_sotto{
     border-bottom: 1px solid $color_main;

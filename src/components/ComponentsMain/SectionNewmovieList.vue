@@ -84,50 +84,53 @@ export default{
     <section>
         <div class="container py-5 px-3">
             <div class="row">
-                <div class="col-11">
+                <div class="col-11 righe_testi">
                     <p class="text-white m-0 mb-3">
                         <span class="fw-bold fs-5">New Movie</span>
                         <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>
-                <div v-for="movie,index in movieList" class="col-4 mt-5" @mouseover="this.contatoreDisplayMovieList = index" @mouseleave="this.contatoreDisplayMovieList = -1">
-                    <img :src=getImagePath(movie.img) alt="2">
-                    <p class="text-white m-0 scritta-left" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
-                       {{movie.durata}}
-                    </p>
-                    <p class="text-white m-0 scritta-right">
-                        <font-awesome-icon class="stella" icon="fa-solid fa-star" />
-                        {{movie.star}}
-                    </p>
-                    <font-awesome-icon :class="this.contatoreDisplayMovieList == index ? `` : `d-none`" class="play"
-                        icon="fa-regular fa-circle-play" />
-                    <h2 class="text-white m-0 scritta-up" :class="this.contatoreDisplayMovieList == index ? `scritta-up_piusu` : ``">
-                        {{movie.text}}
-                    </h2>
-                    <h2 class="text-white m-0 scritta-down" :class="this.contatoreDisplayMovieList == index ? `scritta-down_piusu` : ``">
-                        Category: {{movie.category}}
-                    </h2>
-                    <h2 class="text-white m-0 scritta-a-comparsa-up" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
-                        Release: {{movie.relese}}
-                    </h2>
-                    <h2 class="text-white m-0 scritta-a-comparsa-down" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
-                        Genres: {{movie.genres}}
-                    </h2>
-                    <a href="#" class="bottone-left">Details</a>
-                    <a href="#" class="bottone-right">{{movie.views}} Views</a>
-                </div>
-                <!-- <div class="col-10 mt-5">
+                <div class="col-10 mt-5 p-0">
                     <p class="text-white m-0">
                         <ul class="d-flex justify-content-start list-unstyled text-white">
-                            <li class="ms-4">All</li>
-                            <li class="ms-4">Comin Soon</li>
-                            <li class="ms-4">Latest Movie</li>
-                            <li class="ms-4">Top Rating</li>
-                            <li class="ms-4">TV Series</li>
+                            <li class="me-4">All</li>
+                            <li class="me-4">Comin Soon</li>
+                            <li class="me-4">Latest Movie</li>
+                            <li class="me-4">Top Rating</li>
+                            <li class="me-4">TV Series</li>
                         </ul>
                     </p>
                 </div>
-                <div class="col-4 mt-5" @mouseover="this.contatoreDisplayMovieList = 1" @mouseleave="this.contatoreDisplayMovieList = 0">
+                <div class="row p-0">
+                    <div v-for="movie,index in movieList" class="col-4 mt-5" @mouseover="this.contatoreDisplayMovieList = index" @mouseleave="this.contatoreDisplayMovieList = -1">
+                        <img :src=getImagePath(movie.img) alt="2">
+                        <p class="text-white m-0 scritta-left" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
+                            {{movie.durata}}
+                        </p>
+                        <p class="text-white m-0 scritta-right">
+                            <font-awesome-icon class="stella" icon="fa-solid fa-star" />
+                            {{movie.star}}
+                        </p>
+                        <font-awesome-icon :class="this.contatoreDisplayMovieList == index ? `` : `d-none`" class="play" icon="fa-regular fa-circle-play" />
+                        <h2 class="text-white m-0 scritta-up" :class="this.contatoreDisplayMovieList == index ? `scritta-up_piusu` : ``">
+                            {{movie.text}}
+                        </h2>
+                        <h2 class="text-white m-0 scritta-down" :class="this.contatoreDisplayMovieList == index ? `scritta-down_piusu` : ``">
+                            Category: {{movie.category}}
+                        </h2>
+                        <h2 class="text-white m-0 scritta-a-comparsa-up" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
+                            Release: {{movie.relese}}
+                        </h2>
+                        <h2 class="text-white m-0 scritta-a-comparsa-down" :class="this.contatoreDisplayMovieList == index ? `` : `d-none`">
+                            Genres: {{movie.genres}}
+                        </h2>
+                        <a href="#" class="bottone-left">Details</a>
+                        <a href="#" class="bottone-right">{{movie.views}} Views</a>
+                    </div>
+                </div>
+                
+
+                <!-- <div class="col-4 mt-5" @mouseover="this.contatoreDisplayMovieList = 1" @mouseleave="this.contatoreDisplayMovieList = 0">
                     <img src="../../assets/img/1.jpg" alt="1">
                     <p class="text-white m-0 scritta-left" :class="this.contatoreDisplayMovieList == 1 ? `` : `d-none`">
                         2.30.00
@@ -290,10 +293,10 @@ export default{
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-div.col-11 {
-    border-bottom: 1px solid $color_grey;
-    border-left: 2px solid $color_green;
-}
+// div.col-11 {
+//     border-bottom: 1px solid $color_grey;
+//     border-left: 2px solid $color_green;
+// }
 
 li:nth-child(1){
     color: $color_green;

@@ -42,7 +42,7 @@ export default{
     <section>
         <div class="container py-5 px-3">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 righe_testi">
                     <p class="text-white m-0">
                         <span class="fw-bold fs-5">Latest News</span>
                         <p class="text-white m-0">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
@@ -56,9 +56,9 @@ export default{
                     <a href="#" class="bottone-left">Details</a>
                     <a href="#" class="bottone-right">moviestar 0 comment Share</a>
                 </div>
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 p-0">
                     <div class="row">
-                        <div v-for="blog,index in blogList" :class="index > 1 ? `mt-5` : ``" class="col-6 mt-0 g-4" @mouseover="this.contatoreDisplayDate = index" @mouseleave="this.contatoreDisplayDate = -1">
+                        <div v-for="blog,index in blogList" :class="index > 1 ? `marginTop2rem` : ``, index < 2 ? `mt-0` : ``" class="col-6 g-4" @mouseover="this.contatoreDisplayDate = index" @mouseleave="this.contatoreDisplayDate = -1">
                             <img class="w-100 h-100" :src=getImagePath(blog.img) alt="blog">
                             <p :class="this.contatoreDisplayDate == index ? `` : `d-none`" class="m-0 text-white">{{blog.date}}</p>
                             <h2 class="text-white m-0 fs-5 scritta">
@@ -113,15 +113,18 @@ export default{
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-div.col-12 {
-    border-bottom: 1px solid $color_grey;
-    border-left: 2px solid $color_green;
-}
+// div.col-12 {
+//     border-bottom: 1px solid $color_grey;
+//     border-left: 2px solid $color_green;
+// }
 
 img{
     filter: brightness(0.5);
 }
 
+.marginTop2rem{
+    margin-top: 2rem;
+}
 div.col-6 {
     position: relative;
     
@@ -154,13 +157,14 @@ div.col-6 {
         position: absolute;
         color: white;
         bottom: 30px;
-        left: -15px;
+        left: 0;
 
         text-decoration: none;
         background-color: $color_main;
         padding: 0.5rem 1rem;
-        border-radius: 25px;
-        width: 100px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 85px;
         text-align: end;
     }
 
@@ -172,7 +176,7 @@ div.col-6 {
 
         text-decoration: none;
         padding: 0.5rem 1rem;
-        border-radius: 25px;
+        
     }
 }
 </style>

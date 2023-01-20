@@ -38,6 +38,7 @@
         border: none;
         border-top: 1px solid $color_grey;
         border-bottom: 1px solid $color_grey;
+        color: white;
     }
 
     a{

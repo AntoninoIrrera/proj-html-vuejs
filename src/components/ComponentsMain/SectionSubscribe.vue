@@ -47,6 +47,7 @@ input{
     padding: 1rem;
     width: 300px;
     border-radius: 25px;
+    color: white;
 
 }
 .bottone{
