@@ -41,7 +41,7 @@
                                 <p class="text-white m-0">plying 24</p>
                             </div>
                         </div>
-                        <div class="row p-3">
+                        <div class="row p-3 overflow-auto">
                             <div class="col-4">
                                 <img src="../../assets/img/2-1-100x100.jpg" alt="">
                             </div>
@@ -157,7 +157,10 @@ div.col-11{
 .layer_laterale{
     background-color: $color_grey;
     height: 600px;
-    overflow-y: auto;
-    overflow-x: hidden;
+}
+
+div.overflow-auto{
+    height: 520px;
+    margin-right: 0.01rem;
 }
 </style>
