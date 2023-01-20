@@ -91,13 +91,29 @@ div.col-10{
 img{
     width: 100%;
     height: 100%;
-    filter: brightness(0.5);
     border-radius: 25px;
+    filter: brightness(0.3);
 }
 
 div.col-4.div_centrale{
     height: 650px;
     z-index: 1;
+
+    img{
+        filter: brightness(0.6);
+    }
+
+    h2.scritta-up{
+        filter: brightness(1);
+    }
+
+    h2.scritta-down {
+        filter: brightness(1);
+    }
+
+    p{
+        filter: brightness(1);
+    }
 }
 
 div.col-4{
@@ -105,48 +121,58 @@ div.col-4{
     height: 550px;
     margin-top: 60px;
 
+
     p{
         position: absolute;
         top: 35px;
         right: 25px;
+        filter: brightness(0.3);
     }
 
     h2.scritta-up{
         position: absolute;
         left: 25px;
         bottom: 175px;
+        filter: brightness(0.3);
+        font-size: 1.2rem;
     }
 
     h2.scritta-down {
         position: absolute;
         left: 25px;
         bottom: 125px;
+        filter: brightness(0.3);
+        font-size: 1.2rem;
     }
     a.bottone-left{
         position: absolute;
         color: white;
         bottom: 20px;
-        left: -25px;
+        left: 0;
 
         text-decoration: none;
         background-color: $color_main;
         padding: 0.5rem 1rem;
-        border-radius: 25px;
-        width: 100px;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+        width: 80px;
         text-align: end;
+        filter: brightness(0.3);
     }
 
     a.bottone-right {
         position: absolute;
         color: white;
         bottom: 20px;
-        right: -25px;
+        right: 0;
 
         text-decoration: none;
         background-color: $color_main;
         padding: 0.5rem 1rem;
-        border-radius: 25px;
-        width: 120px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        width: 110px;
+        filter: brightness(0.3);
     }
 }
 </style>
